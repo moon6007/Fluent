@@ -12,6 +12,7 @@ return function(Parent, Acrylic)
 		FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
 		TextColor3 = Color3.fromRGB(200, 200, 200),
 		TextSize = 14,
+		TextEditable = false,
 		TextXAlignment = Enum.TextXAlignment.Left,
 		TextYAlignment = Enum.TextYAlignment.Center,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -115,6 +116,8 @@ return function(Parent, Acrylic)
 		Creator.OverrideTag(Textbox.Frame, { BackgroundColor3 = Acrylic and "Input" or "DialogInput" })
 		Creator.OverrideTag(Textbox.Indicator, { BackgroundColor3 = Acrylic and "InputIndicator" or "DialogInputLine" })
 	end)
-
+function Textbox:UpdateLabel(name)
+Textbox.Text = name
+end
 	return Textbox
 end
