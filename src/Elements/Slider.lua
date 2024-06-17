@@ -138,6 +138,7 @@ function Element:New(Idx, Config)
 	end
 
 	function Slider:SetValue(Value)
+		print("whyyyyyyyyyyyyyyyyy")
 		self.Value = Library:Round(math.clamp(Value, Slider.Min, Slider.Max), Slider.Rounding)
 		SliderDot.Position = UDim2.new((self.Value - Slider.Min) / (Slider.Max - Slider.Min), -7, 0.5, 0)
 		SliderFill.Size = UDim2.fromScale((self.Value - Slider.Min) / (Slider.Max - Slider.Min), 1)
