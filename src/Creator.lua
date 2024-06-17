@@ -158,6 +158,7 @@ function Creator.SpringMotor(Initial, Instance, Prop, IgnoreDialogCheck, ResetOn
 	end
 
 	local function SetValue(Value, Ignore)
+				print("whyyyyyyyyyyyyy")
 		Ignore = Ignore or false
 		if not IgnoreDialogCheck then
 			if not Ignore then
