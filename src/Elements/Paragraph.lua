@@ -14,7 +14,7 @@ function Paragraph:New(Config)
 	local Paragraph = require(Components.Element)(Config.Title, Config.Content, Paragraph.Container, false)
 	Paragraph.Frame.BackgroundTransparency = 0.92
 	Paragraph.Border.Transparency = 0.6
-function UpdateLabel2:UpdateLabel(name)
+function Paragraph:UpdateLabel(name)
 					print("hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii")
 				end
 	return Paragraph
