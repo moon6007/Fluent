@@ -11,7 +11,7 @@ Element.__type = "Label"
 function Element:New(Config)
 	assert(Config.Text, "Label - Missing Title")
 
-	--local LabelFrame = require(Components.Element)(Config.Text, Config.Description, self.Container, true)
+	local LabelFrame = require(Components.Element)(Config.Text, Config.Description, self.Container, true)
 				local UpdateLabel2 = {}
 
 	local ButtonIco = New("ImageLabel", {
